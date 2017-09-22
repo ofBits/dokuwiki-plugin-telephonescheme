@@ -1,0 +1,7 @@
+base   telephonescheme
+author Aaron Mast
+email  aaron@handfulofbits.com
+date   2017/09/22
+name   Telephone Scheme Plugin
+desc   Adds markup to support the tel: URI Scheme. Use <<tel:number>> or <<tel:number&noicon>>
+url    https://github.com/ofBits/dokuwiki-plugin-telephonescheme
