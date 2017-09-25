@@ -9,7 +9,7 @@ if (!defined('DOKU_PLUGIN')) define('DOKU_PLUGIN',DOKU_INC.'lib/plugins/');
 
 require_once(DOKU_PLUGIN.'syntax.php');
 
-class syntax_plugin_telephone extends DokuWiki_Syntax_Plugin {
+class syntax_plugin_telephonescheme extends DokuWiki_Syntax_Plugin {
 
     function getType() { return 'substition'; }
     function getPType() { return 'normal'; }
@@ -17,7 +17,7 @@ class syntax_plugin_telephone extends DokuWiki_Syntax_Plugin {
 
    function connectTo($mode) {
 
-        $this->Lexer->addSpecialPattern('<<tel:.+?>>', $mode, 'plugin_telephone');
+        $this->Lexer->addSpecialPattern('<<tel:.+?>>', $mode, 'plugin_telephonescheme');
     }
 
     function handle($match, $state, $pos, Doku_Handler $handler) {
